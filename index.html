@@ -4,14 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-o5PRufv6WEnbs8EGnnsWcIg1uj0IuLzLwFLFT9rE94jk5VH0zgZSFFhvTb5jFPW+egeulxp4/EtrKmOn8Bzuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    .card {
-      transition: transform 0.3s ease;
+    /* Additional styles for the lamp icon */
+    .lamp-icon {
+      font-size: 24px;
+      cursor: pointer;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
+    .light-mode .lamp-icon {
+      color: #333;
+    }
+
+    .dark-mode .lamp-icon {
+      color: #fff;
     }
   </style>
   <title>Construction Company</title>
@@ -23,35 +30,14 @@
       <li><a href="#services">Services</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="#contact">Contact Us</a></li>
+      <!-- Lamp icon for toggle light and dark mode -->
+      <li class="lamp-icon" id="toggleModeBtn"><i class="fas fa-lightbulb"></i></li>
     </ul>
-    <button id="toggleModeBtn">Toggle Mode</button>
   </nav>
 
   <section id="home">
     <h1>Welcome to our Construction Company</h1>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <img src="founder1.jpg" class="card-img-top" alt="Founder 1">
-            <div class="card-body">
-              <h5 class="card-title">John Doe</h5>
-              <p class="card-text">Co-Founder</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-            <img src="founder2.jpg" class="card-img-top" alt="Founder 2">
-            <div class="card-body">
-              <h5 class="card-title">Jane Smith</h5>
-              <p class="card-text">Co-Founder</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Home section content goes here -->
   </section>
 
   <section id="services">
@@ -68,13 +54,24 @@
   <div class="scrolling-banner-container">
     <div class="scrolling-banner">
       <!-- Add logos here -->
-      <img src="company1.png" alt="Company 1">
-      <img src="company2.png" alt="Company 2">
-      <img src="company3.png" alt="Company 3">
+      <img src="assets/banner/mm-1.png" alt="Company 1">
+      <img src="assets/banner/mm-2.png" alt="Company 2">
+      <img src="assets/banner/mm-3.png" alt="Company 3">
+      <img src="assets/banner/mm-4.png" alt="Company 1">
+      <img src="assets/banner/mm-5.png" alt="Company 2">
+      <img src="assets/banner/mm-6.png" alt="Company 3">
+      <img src="assets/banner/mm-7.png" alt="Company 1">
+      <img src="assets/banner/mm-8.png" alt="Company 2">
+      <img src="assets/banner/mm-9.png" alt="Company 3">
+      <img src="assets/banner/mm-10.png" alt="Company 1">
+      <img src="assets/banner/mm-11.png" alt="Company 2">
+      <img src="assets/banner/mm-12.png" alt="Company 3">
       <!-- Add more logos for companies later -->
     </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
