@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #eee;
+  }
+  
+  h1, h2, h5 {
+    color: #333;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* Light Mode */
+  .light-mode {
+    background-color: #eee;
+    color: #333;
+  }
+  
+  .light-mode nav {
+    background-color: #333;
+  }
+  
+  .light-mode nav ul li a {
+    color: #fff;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #333;
+    color: #eee;
+  }
+  
+  .dark-mode nav {
+    background-color: #eee;
+  }
+  
+  .dark-mode nav ul li a {
+    color: #333;
+  }
+  
+  /* Carousel Styles */
+  .carousel-inner .carousel-item img {
+    height: 400px; /* Set the height of the carousel images */
+    object-fit: cover; /* Preserve the aspect ratio and fill the container */
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for captions */
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for carousel controls */
+  }
+  
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%;
+  }
+  
+  /* Carousel Animation */
+  .carousel-item {
+    transition: transform 1s ease; /* Set the interval for carousel scrolling */
+  }
+  
+  .carousel-item.active {
+    transform: translateX(0);
+  }
+  
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    transform: translateX(0);
+  }
+  
+  .carousel-item-next,
+  .active.carousel-item-right {
+    transform: translateX(100%);
+  }
+  
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    transform: translateX(-100%);
+  }
+  
+
+      /* Additional styles for the scrolling banner */
+      .scrolling-banner-container {
+        overflow: hidden;
+        background-color: #f7f7f7;
+        padding: 10px 0;
+      }
+  
+      .scrolling-banner {
+        white-space: nowrap;
+        animation: scroll-left 20s linear infinite;
+      }
+  
+      .scrolling-banner img {
+        height: 60px;
+        padding: 10px;
+      }
+  
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }

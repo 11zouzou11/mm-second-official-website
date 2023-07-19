@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .card {
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+  <title>Construction Company</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <button id="toggleModeBtn">Toggle Mode</button>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to our Construction Company</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="founder1.jpg" class="card-img-top" alt="Founder 1">
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">Co-Founder</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <img src="founder2.jpg" class="card-img-top" alt="Founder 2">
+            <div class="card-body">
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text">Co-Founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <!-- Services section content goes here -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <!-- Contact section content goes here -->
+  </section>
+
+  <!-- Scrolling Banner -->
+  <div class="scrolling-banner-container">
+    <div class="scrolling-banner">
+      <!-- Add logos here -->
+      <img src="company1.png" alt="Company 1">
+      <img src="company2.png" alt="Company 2">
+      <img src="company3.png" alt="Company 3">
+      <!-- Add more logos for companies later -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
