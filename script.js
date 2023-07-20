@@ -1,3 +1,4 @@
+// Light and Dark Mode Toggle
 document.getElementById("toggleModeBtn").addEventListener("click", toggleMode);
 
 function toggleMode() {
@@ -6,41 +7,39 @@ function toggleMode() {
   body.classList.toggle("dark-mode");
 }
 
-
+// Carousel Functionality (Using jQuery)
 $(document).ready(function() {
-    // Handle carousel navigation on arrow click
-    $(".carousel-control-prev").click(function() {
-      $("#carouselExampleControls").carousel("prev");
-    });
-  
-    $(".carousel-control-next").click(function() {
-      $("#carouselExampleControls").carousel("next");
-    });
+  // Handle carousel navigation on arrow click
+  $(".carousel-control-prev").click(function() {
+    $("#carouselExampleControls").carousel("prev");
   });
-  
 
-  // Scrolling banner functionality
-  function startScrolling() {
-    const container = $(".scrolling-banner-container");
-    const banner = $(".scrolling-banner");
-    const firstLogo = banner.children().first();
+  $(".carousel-control-next").click(function() {
+    $("#carouselExampleControls").carousel("next");
+  });
+});
 
-    // Calculate the total width of the logos in the banner
-    const totalWidth = banner.children().length * (firstLogo.outerWidth() + 20); // 20px for padding
+// Scrolling Banner Functionality
+function startScrolling() {
+  const container = $(".scrolling-banner-container");
+  const banner = $(".scrolling-banner");
+  const firstLogo = banner.children().first();
 
-    // Set the initial position of the banner
-    banner.css("width", totalWidth + "px").css("left", container.outerWidth() + "px");
+  // Calculate the total width of the logos in the banner
+  const totalWidth = banner.children().length * (firstLogo.outerWidth() + 20); // 20px for padding
 
-    // Function to animate the scrolling
-    function animateScrolling() {
-      banner.animate({ left: -totalWidth + "px" }, totalWidth * 30, "linear", function() {
-        banner.css("left", container.outerWidth() + "px");
-        animateScrolling();
-      });
-    }
+  // Set the initial position of the banner
+  banner.css("width", totalWidth + "px").css("left", container.outerWidth() + "px");
 
-    animateScrolling();
+  // Function to animate the scrolling
+  function animateScrolling() {
+    banner.animate({ left: -totalWidth + "px" }, totalWidth * 30, "linear", function() {
+      banner.css("left", container.outerWidth() + "px");
+      animateScrolling();
+    });
   }
 
-  startScrolling();
-});
+  animateScrolling();
+}
+
+startScrolling();
