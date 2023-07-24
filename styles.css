@@ -139,25 +139,28 @@ footer {
 
 .partner-logos {
   display: flex;
-  /* Set the initial position to the right of the container */
-  animation: scrollBanner 15s linear infinite;
+  /* Set the initial position to the right edge of the screen */
+  /* Use the negative value of the total width of all logos to start from the right edge */
+  transform: translateX(100%);
+  animation: scrollBanner 30s linear infinite;
 }
 
 .partner-logos img {
   width: 150px;
   height: auto;
-  margin: 0 20px;
+  margin: 20px 20px;
 }
 
 /* CSS Animation for Scrolling Banner */
 @keyframes scrollBanner {
   0% {
-      /* Move the logos from the right (100% of container width) to the left (0%) */
+      /* Move the logos to the left edge of the screen (100% of container width) */
       transform: translateX(100%);
   }
   100% {
-      /* Move the logos to the left (-100% of container width) to complete the loop */
-      transform: translateX(-100%);
+      /* Move the logos to the right edge of the screen (0% of container width) */
+      /* Use the negative value of the total width of all logos to reach the right edge */
+      transform: translateX(-300%);
   }
 }
 
