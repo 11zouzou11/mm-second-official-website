@@ -129,6 +129,42 @@ footer {
 
 
 
+/* Scrolling Banner Styles */
+.partner-logos-container {
+  overflow: hidden;
+  background-color: #f0f0f0;
+  /* Set the width to the total width of all logos to make them align from right to left */
+  width: 100%;
+}
+
+.partner-logos {
+  display: flex;
+  /* Set the initial position to the right of the container */
+  animation: scrollBanner 15s linear infinite;
+}
+
+.partner-logos img {
+  width: 150px;
+  height: auto;
+  margin: 0 20px;
+}
+
+/* CSS Animation for Scrolling Banner */
+@keyframes scrollBanner {
+  0% {
+      /* Move the logos from the right (100% of container width) to the left (0%) */
+      transform: translateX(100%);
+  }
+  100% {
+      /* Move the logos to the left (-100% of container width) to complete the loop */
+      transform: translateX(-100%);
+  }
+}
+
+
+
+
+
 
 /* Footer Styles */
 footer {
