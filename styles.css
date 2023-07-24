@@ -7,23 +7,55 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Your existing CSS styles */
+
 /* Navbar Styles */
 .navbar {
-  background-color: rgba(0, 109, 119, 0.9);
-  padding: 10px 20px;
-  transition: background-color 0.3s ease;
-}
-
-.navbar a {
+  background-color: #333;
   color: #fff;
-  font-size: 16px;
-  margin-right: 15px;
-  transition: color 0.3s ease;
+  padding: 10px 0;
 }
 
-.navbar a:hover {
-  color: #83C5BE;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+/* Company Logo Styles */
+.company-logo img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 20px; /* Add some space between the logo and the navbar links */
+}
+
+/* Navbar Links Styles */
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links li:first-child {
+  margin-left: 0; /* Remove left margin for the first link */
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #83C5BE; /* Hover color using the provided color palette */
+}
+
 
 /* Section Styles */
 .section {
@@ -169,14 +201,13 @@ footer {
 
 
 
+/* Your existing CSS styles */
+
 /* Footer Styles */
-footer {
+.footer {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
-  display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
 }
 
 .container {
@@ -184,6 +215,7 @@ footer {
   margin: 0 auto;
 }
 
+/* Left Section Styles for Social Links */
 .social-links {
   text-align: left;
 }
@@ -191,9 +223,10 @@ footer {
 .social-links a {
   color: #fff;
   font-size: 24px;
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
+/* Right Section Styles for Company Info */
 .company-info {
   text-align: right;
 }
@@ -207,6 +240,6 @@ footer {
   .social-links,
   .company-info {
       text-align: center;
+      margin-bottom: 10px;
   }
 }
-
