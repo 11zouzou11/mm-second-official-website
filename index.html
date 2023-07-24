@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-o5PRufv6WEnbs8EGnnsWcIg1uj0IuLzLwFLFT9rE94jk5VH0zgZSFFhvTb5jFPW+egeulxp4/EtrKmOn8Bzuw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-o5PRufv6WEnbs8EGnnsWcIg1uj0IuLzLwFLFT9rE94jk5VH0zgZSFFhvTb5jFPW+egeulxp4/EtrKmOn8Bzuw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-
-  </style>
-  <title>Construction Company</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <!-- Dark and Light Mode Toggle -->
-      <li class="lamp-icon" id="toggleModeBtn"></li>
-    </ul>
-  </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <!-- Add your logo image here -->
+                <!-- <img src="logo.png" alt="Logo"> -->
+                Construction Company
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <section id="home">
-  <!-- First Section -->
-  <!-- First Section -->
-    <section class="first-section">
-      <div class="left-side">
-        <h2>Left Side Header</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div class="right-side">
-        <img src="path/to/your/image.jpg" alt="Round Picture">
-        <h2>Right Side Header</h2>
-      </div>
+    <!-- Home Section -->
+    <section id="home" class="section home-section" style="background-color: #006D77;">
+        <!-- Your content for the Home section goes here -->
     </section>
-  </section>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <!-- Services section content goes here -->
-  </section>
+    <!-- Services Section -->
+    <section id="services" class="section services-section" style="background-color: #83C5BE;">
+        <!-- Your content for the Services section goes here -->
+    </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <!-- Contact section content goes here -->
-  </section>
+    <!-- About Us Section -->
+    <section id="about" class="section about-section" style="background-color: #EDF6F9;">
+        <!-- Your content for the About Us section goes here -->
+    </section>
 
-  <!-- Scrolling Banner -->
-  <div class="scrolling-banner-container">
-    <div class="scrolling-banner">
-      <!-- Add logos here -->
-      <img src="assets/banner/mm-1.png" alt="Company 1">
-      <img src="assets/banner/mm-2.png" alt="Company 2">
-      <img src="assets/banner/mm-3.png" alt="Company 3">
-      <img src="assets/banner/mm-4.png" alt="Company 1">
-      <img src="assets/banner/mm-5.png" alt="Company 2">
-      <img src="assets/banner/mm-6.png" alt="Company 3">
-      <img src="assets/banner/mm-7.png" alt="Company 1">
-      <img src="assets/banner/mm-8.png" alt="Company 2">
-      <img src="assets/banner/mm-9.png" alt="Company 3">
-      <img src="assets/banner/mm-10.png" alt="Company 1">
-      <img src="assets/banner/mm-11.png" alt="Company 2">
-      <img src="assets/banner/mm-12.png" alt="Company 3">
-      <!-- Add more logos for companies later -->
-    </div>
-  </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section" style="background-color: #FFDDD2;">
+        <!-- Your content for the Contact section goes here -->
+    </section>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>

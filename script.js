@@ -1,45 +1,34 @@
-// Light and Dark Mode Toggle
-document.getElementById("toggleModeBtn").addEventListener("click", toggleMode);
+// Smooth scrolling when clicking on navigation links
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".navbar a");
 
-function toggleMode() {
-  const body = document.body;
-  body.classList.toggle("light-mode");
-  body.classList.toggle("dark-mode");
-}
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+      const navbarHeight = document.querySelector(".navbar").offsetHeight;
 
-// Carousel Functionality (Using jQuery)
-$(document).ready(function() {
-  // Handle carousel navigation on arrow click
-  $(".carousel-control-prev").click(function() {
-    $("#carouselExampleControls").carousel("prev");
-  });
+      if (targetElement) {
+        const targetPosition = targetElement.getBoundingClientRect().top;
+        const offsetPosition = targetPosition - navbarHeight;
 
-  $(".carousel-control-next").click(function() {
-    $("#carouselExampleControls").carousel("next");
+        window.scrollBy({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    });
   });
 });
 
-// Scrolling Banner Functionality
-function startScrolling() {
-  const container = $(".scrolling-banner-container");
-  const banner = $(".scrolling-banner");
-  const firstLogo = banner.children().first();
 
-  // Calculate the total width of the logos in the banner
-  const totalWidth = banner.children().length * (firstLogo.outerWidth() + 20); // 20px for padding
 
-  // Set the initial position of the banner
-  banner.css("width", totalWidth + "px").css("left", container.outerWidth() + "px");
-
-  // Function to animate the scrolling
-  function animateScrolling() {
-    banner.animate({ left: -totalWidth + "px" }, totalWidth * 30, "linear", function() {
-      banner.css("left", container.outerWidth() + "px");
-      animateScrolling();
+<script>
+    // Enable automatic carousel interval
+    document.addEventListener("DOMContentLoaded", function () {
+        const imageCarousel = new bootstrap.Carousel(document.getElementById("imageCarousel"), {
+            interval: 2000, // 2 seconds interval for automatic scrolling
+        });
     });
-  }
-
-  animateScrolling();
-}
-
-startScrolling();
+</script>
