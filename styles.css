@@ -63,6 +63,7 @@ body {
 }
 
 /* Home Section Styles */
+/*
 .home-section {
   min-height: 100vh;
   display: flex;
@@ -71,6 +72,50 @@ body {
   text-align: center;
   color: #fff;
 }
+*/
+
+
+/* Home Section Styles with Hero Image */
+.home {
+  height: 100vh;
+  background-color: #000; /* Fallback color for browsers that do not support the background image */
+  background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"); /* Replace with the path to your hero image */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Set the transparency to 50% (adjust the last value as needed) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Text color on the hero image */
+}
+
+.hero-image h1 {
+  font-size: 36px;
+}
+
+.hero-image p {
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Services Section Styles */
 .services-section {
