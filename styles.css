@@ -7,7 +7,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Your existing CSS styles */
+
 
 /* Navbar Styles */
 .navbar {
@@ -159,6 +159,81 @@ footer {
 }
 
 
+/* About Us Section Styles */
+.about-us {
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Section Styles */
+.left-about {
+  text-align: center;
+}
+
+.left-about h1 {
+  font-size: 36px;
+}
+
+.left-about p {
+  font-size: 18px;
+}
+
+/* Right Section Styles */
+.right-about {
+  text-align: right; /* Align the content to the right */
+}
+
+.circle-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle-image {
+  text-align: center;
+  width: 45%; /* Adjust the width of the circular image section */
+  margin-right: 5%; /* Add some spacing between the circular images */
+}
+
+.circle-image:last-child {
+  margin-right: 0; /* Remove the right margin from the last circular image */
+}
+
+.circle-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.circle-image h3 {
+  font-size: 24px;
+}
+
+.circle-image p {
+  font-size: 16px;
+}
+
+/* Media Queries for Responsive Design (Adjust as needed) */
+@media (max-width: 768px) {
+  .circle-images {
+      flex-direction: column;
+  }
+
+  .circle-image {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px; /* Add some spacing between the circular images in mobile view */
+  }
+}
+
+
+
+
+
 
 
 /* Scrolling Banner Styles */
@@ -199,9 +274,6 @@ footer {
 
 
 
-
-
-/* Your existing CSS styles */
 
 /* Footer Styles */
 .footer {
