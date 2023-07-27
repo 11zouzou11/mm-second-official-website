@@ -126,6 +126,7 @@ body {
 }
 
 /* Hero Content Styles */
+
 .hero-content {
   position: absolute;
   top: 0;
@@ -137,7 +138,15 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
-  /* Add any additional styles for the hero content, such as font-size, etc. */
+  opacity: 0; /* Set initial opacity to 0 for the fade-in effect */
+  animation: fadeInAnimation 5s ease forwards; /* 1-second fade-in animation */
+}
+
+/* Fade-in animation keyframes */
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1; /* At the end of the animation, opacity will be 1 */
+  }
 }
 
 
