@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const videoBg = document.getElementById('video-bg');
+  if (videoBg) {
+    // Set the playback rate to 0.5 (50% slower speed)
+    videoBg.playbackRate = 0.5;
+  }
+});
+
+
 
 <script>
     // Enable automatic carousel interval
@@ -32,3 +41,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 </script>
+
+
