@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Enable automatic carousel interval
     document.addEventListener("DOMContentLoaded", function () {
         const imageCarousel = new bootstrap.Carousel(document.getElementById("imageCarousel"), {
-            interval: 2000, // 2 seconds interval for automatic scrolling
+            interval: 1000, // 2 seconds interval for automatic scrolling
         });
     });
 </script>
