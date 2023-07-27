@@ -155,11 +155,32 @@ body {
 }
 
 /* About Us Section Styles */
+
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000; /* Change the text color for the About Us section */
+}
+
+
 .about-section {
   background-color: rgba(237, 246, 249, 0.9);
 }
 
 /* Contact Section Styles */
+
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000; /* Change the text color for the Contact section */
+}
+
 .contact-section {
   background-color: rgba(255, 221, 210, 0.9);
 }
@@ -440,6 +461,18 @@ footer {
 
 
 /* Services Section Styles */
+
+.services-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+
+
 .services {
   height: 100vh;
   background-color: #f0f0f0;
