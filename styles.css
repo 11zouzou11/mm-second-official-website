@@ -26,7 +26,7 @@ body {
 /* Company Logo Styles */
 .company-logo img {
   width: 90px; /* Adjust the width as needed */
-  height: auto;
+  height: 100px;
   margin-right: 20px; /* Add some space between the logo and the navbar links */
 }
 
